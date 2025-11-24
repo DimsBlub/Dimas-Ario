@@ -525,8 +525,16 @@ body {
 
 @media (max-width: 768px) {
   .nav-menu {
-    gap: 1.5rem;
-    font-size: 0.9rem;
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
   }
 
   .home-content,
@@ -536,16 +544,41 @@ body {
     gap: 2rem;
   }
 
+  .section {
+    padding: 4rem 1rem;
+    min-height: auto;
+  }
+
+  .greeting {
+    font-size: 1.1rem;
+  }
+
   .name {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .role {
+    font-size: 1.3rem;
+  }
+
+  .intro {
+    font-size: 1rem;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 1.5rem;
+  }
+
+  .skill-card i {
+    font-size: 2.5rem;
   }
 
   .about-content {
@@ -555,16 +588,220 @@ body {
   .about-image {
     order: -1;
   }
-}
-.cursor {
-  display: inline-block;
-  margin-left: 2px;
-  font-weight: 500;
-  animation: blink 0.6s infinite;
-}
 
+  .about-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-text h4 {
+    font-size: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    padding: 1.5rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .social-icon-large {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .social-icon-large i {
+    font-size: 1.5rem;
+  }
+
+  .social-icon-large span {
+    font-size: 1rem;
+  }
+}
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .nav-menu {
+    gap: 2rem;
+  }
+
+  .home-content,
+  .about-content,
+  .contact-content {
+    gap: 3rem;
+  }
+
+  .name {
+    font-size: 3.5rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .nav-container {
+    padding: 0 0.5rem;
+  }
+
+  .nav-menu {
+    gap: 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .logo i {
+    display: none;
+  }
+
+  .home-content {
+    gap: 1.5rem;
+  }
+
+  .greeting {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    gap: 0.8rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-text h4 {
+    font-size: 1rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skill-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-bar {
+    height: 8px;
+    margin-bottom: 0.3rem;
+  }
+
+  .skill-percent {
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .contact-item i {
+    font-size: 1.5rem;
+  }
+
+  .contact-item h4 {
+    font-size: 1rem;
+  }
+
+  .contact-item p {
+    font-size: 0.9rem;
+  }
+
+  .social-icon-large {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .social-icon-large i {
+    font-size: 1.3rem;
+  }
+
+  .social-icon-large span {
+    font-size: 0.95rem;
+  }
+
+  .footer-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+
+  .cursor {
+    margin-left: 1px;
+  }
 }

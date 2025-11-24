@@ -4,6 +4,9 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// Reduce particles on mobile devices
+const particleCount = window.innerWidth < 768 ? 30 : 80;
+
 class Particle {
   constructor() {
     this.x = Math.random() * canvas.width;
@@ -35,7 +38,6 @@ class Particle {
 }
 
 const particlesArray = [];
-const particleCount = 80;
 
 function initParticles() {
   for (let i = 0; i < particleCount; i++) {
@@ -44,13 +46,15 @@ function initParticles() {
 }
 
 function connectParticles() {
+  const connectionDistance = window.innerWidth < 768 ? 100 : 150;
+  
   for (let a = 0; a < particlesArray.length; a++) {
     for (let b = a + 1; b < particlesArray.length; b++) {
       const dx = particlesArray[a].x - particlesArray[b].x;
       const dy = particlesArray[a].y - particlesArray[b].y;
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      if (distance < 150) {
+      if (distance < connectionDistance) {
         ctx.strokeStyle = `rgba(14, 165, 233, ${0.2 - distance / 750})`;
         ctx.lineWidth = 1;
         ctx.beginPath();

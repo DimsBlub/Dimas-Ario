@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimas Ario Sugiyanto - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <canvas id="particles"></canvas>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo""><i class="fas fa-code"></i> Dimas Ario</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="section home-section">
+      <div class="container">
+        <div class="home-content">
+          <div class="home-text">
+            <h3 class="greeting">Hi, It's me</h3>
+            <h1 class="name">Dimas Ario</h1>
+            <h2 class="role">
+              <span id="typing-text"></span><span class="cursor">|</span>
+            </h2>
+            <p class="intro">
+              Hi, I'm Dimas Ario Sugiyanto a student and aspiring web developer.
+              Most people call me Dim sounds better than my full name anyway. I focus on learning, creating, and improving through technology.
+            </p>
+            <div class="social-links">
+              <a href="https://www.tiktok.com/@0010.110.11?_r=1&_t=ZS-91PQr0IETRa" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.instagram.com/dimmrryy?igsh=ZnEzMzllamp6NmVm" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://open.spotify.com/user/h6uv0acj1gzt7x4tnks9oec25?si=VMAkfxPLRJ6WqgzP1ZtIlg&nd=1&dlsi=463be57643e9486a" class="social-icon" target="_blank"><i class="fab fa-spotify"></i></a>
+              <a href="https://github.com/DimsBlub" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="home-image">
+            <div class="image-container">
+              <div class="profile-pic"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="image-container">
+              <div class="profile-pic"></div>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3 class="name">Dimas Ario</h3>
+            <h4>I'm a Student</h4>
+            <p>
+              Hi guyss! I’m a student who spends most of my time somewhere between learning new things, fixing bugs, and pretending that I totally know what I’m doing (padahal ngerti juga ngga hahahaa)
+            </p>
+            <p>
+              My main focus is web development, with a slight interest in  IoT, because why not make things a little more futuristic and learn something new?
+            </p>
+            <p>
+              Aku pernah bikin beberapa project seperti Website Robotic Community yaaaa itu ekstrakurikuler yang aku ikuti disekolah dan Web Kumpulan Tugas Harian Jurusan, dua project yang ngajarin aku bahwa logika pemrograman itu penting
+            </p>
+            <p>
+              On my free time, you’ll probably find me gaming, coding, badminton, learning something new, atau ngulik hal random yang tiba-tiba muncul di kepala. I love discovering new ideas, even the weird ones, because kadang justru itu yang jadi project beneran
+            </p>
+            <p>
+              For me, being a developer isn’t just about writing code. It’s about building experiences, solving problems with creativity, and enjoying every small moment from “hah ini apaan?” to “finally bruhh, it works!!!”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="95"></div>
+            </div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-cuttlefish"></i>
+            <h3>C++</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="58"></div>
+            </div>
+            <span class="skill-percent">58%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-figma"></i>
+            <h3>Figma</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="50"></div>
+            </div>
+            <span class="skill-percent">50%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>MySQL</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="55"></div>
+            </div>
+            <span class="skill-percent">55%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-git-alt"></i>
+            <h3>Git</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="40"></div>
+            </div>
+            <span class="skill-percent">40%</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>ariodms99@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Bandung, Jawa Barat</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <h3>My Social Network</h3>
+            <div class="social-links-large">
+              <a href="https://www.tiktok.com/@0010.110.11?_r=1&_t=ZS-91PQr0IETRa" class="social-icon-large" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+              </a>
+              <a href="https://www.instagram.com/dimmrryy?igsh=ZnEzMzllamp6NmVm" class="social-icon-large" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="https://open.spotify.com/user/h6uv0acj1gzt7x4tnks9oec25?si=VMAkfxPLRJ6WqgzP1ZtIlg&nd=1&dlsi=463be57643e9486a" class="social-icon-large" target="_blank">
+                <i class="fab fa-spotify"></i>
+                <span>Spotify</span>
+              </a>
+              <a href="https://github.com/DimsBlub" class="social-icon-large" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://www.tiktok.com/@0010.110.11?_r=1&_t=ZS-91PQr0IETRa" class="footer-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/dimmrryy?igsh=ZnEzMzllamp6NmVm" class="footer-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://open.spotify.com/user/h6uv0acj1gzt7x4tnks9oec25?si=VMAkfxPLRJ6WqgzP1ZtIlg&nd=1&dlsi=463be57643e9486a" class="footer-icon" target="_blank"><i class="fab fa-spotify"></i></a>
+          <a href="https://github.com/DimsBlub" class="footer-icon" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 Dimas Ario. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
